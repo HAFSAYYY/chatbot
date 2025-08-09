@@ -3,15 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FortēAI Chatbot</title>
+  <title>FortēAI – Smart Chatbot for Students</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #4CAF50, #2E8B57);
+      color: white;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.5;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 0;
+    }
+    .feature-box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      width: 250px;
+      transition: transform 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: scale(1.05);
+    }
+    .feature-box h3 {
+      color: #FFD700;
+    }
+    footer {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>FortēAI – Smart Chatbot for Students</h1>
+    <p>Your intelligent academic assistant — here to answer questions, share motivation, and keep you updated with important academic events.</p>
+  </header>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>📚 Student FAQs</h3>
+      <p>Get instant answers about admissions, courses, and campus facilities.</p>
+    </div>
+    <div class="feature-box">
+      <h3>💡 Motivation</h3>
+      <p>Receive daily quotes to keep your learning journey inspiring.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🗓 Academic Calendar</h3>
+      <p>Stay updated with exam dates, events, and holidays.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⏰ Reminders</h3>
+      <p>Never miss a class, assignment, or presentation again.</p>
+    </div>
+  </section>
+
+  <footer>
+    FortēAI – Developed by Hafsa Usman and Team
+  </footer>
 
   <!-- Dialogflow Messenger -->
   <df-messenger
